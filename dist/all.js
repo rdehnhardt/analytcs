@@ -1,6 +1,6 @@
 var analytcs = {
 
-    endPoint: 'http://api.lojaskd.com.br/visit',
+    endPoint: 'http://your.url.com/visit',
     session: null,
     user: null,
     app: null,
