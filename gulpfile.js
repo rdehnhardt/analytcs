@@ -11,9 +11,9 @@ var rename = require('gulp-rename');
 // Concatenate & Minify JS
 gulp.task('scripts', function () {
     return gulp.src('js/*.js')
-        .pipe(concat('all.js'))
+        .pipe(concat('analytcs.js'))
         .pipe(gulp.dest('dist'))
-        .pipe(rename('all.min.js'))
+        .pipe(rename('analytcs.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist'));
 });
