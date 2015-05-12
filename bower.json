@@ -1,0 +1,20 @@
+{
+  "name": "rdehnhardt/analytcs",
+  "version": "1.0.0",
+  "description": "Javascript for web analytcs",
+  "main": "dist/all.min.js",
+  "keywords": [
+    "analycts"
+  ],
+  "authors": [
+    "Renato Dehnhardt"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
