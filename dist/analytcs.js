@@ -1,6 +1,6 @@
 var analytcs = {
 
-    endPoint: 'http://your.url.com/visit',
+    endPoint: 'http://api.webstage.app/visit',
     session: null,
     user: null,
     app: null,
@@ -20,7 +20,6 @@ var analytcs = {
         }
 
         this.app = app;
-
         this.ping();
     },
 
@@ -71,6 +70,18 @@ var analytcs = {
         return uuid;
     },
 
+    getParams: function () {
+        var output = [];
+
+        if (this.app.length) {
+            for (var i = 0; i < this.app.length; i++) {
+                output.push(this.app[i][0] + '=' + this.app[i][1]);
+            }
+        }
+
+        return output.join('&');
+    },
+
     getRequest: function () {
         var xmlhttp;
 
@@ -87,6 +98,7 @@ var analytcs = {
         this.app.push(['resolution', window.innerWidth + 'x' + window.innerHeight]);
         this.app.push(['location', location.href]);
         this.app.push(['session', this.session]);
+        this.app.push(['user', this.user]);
 
         var Request = this.getRequest();
         Request.open("GET", this.endPoint + '?q=' + JSON.stringify(this.app), true);
