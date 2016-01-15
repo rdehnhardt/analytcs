@@ -1,5 +1,5 @@
 {
-  "name": "rdehnhardt/analytcs",
+  "name": "rdehnhardt.analytcs",
   "version": "1.0.0",
   "description": "Javascript for web analytcs",
   "main": "dist/all.min.js",
