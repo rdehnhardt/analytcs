@@ -1,6 +1,6 @@
 var analytcs = {
 
-    endPoint: 'http://api.webstage.app/visit',
+    endPoint: 'your_endpoint',
     session: null,
     user: null,
     app: null,
